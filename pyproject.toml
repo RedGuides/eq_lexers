@@ -1,0 +1,45 @@
+[project]
+name = "eqcommand_lexer"
+description = "Pygments lexer for EverQuest command syntax highlighting"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+dynamic = ["version"]
+authors = [
+  { name = "Redbot", email = "ask@redguides.com" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+  "pygments >=2.0"
+]
+
+[project.entry-points."pygments.lexers"]
+eqcommand = "eq_lexers.eqcommand_lexer:EQCommandLexer"
+
+[project.urls]
+Repository = "https://github.com/yourusername/eqcommand-lexer.git"
+Issues = "https://github.com/yourusername/eqcommand-lexer/issues"
+Documentation = "https://github.com/yourusername/eqcommand-lexer#readme"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "README.md",
+  "LICENSE.txt",
+  "eq_lexers/*.py"
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["eq_lexers"]
