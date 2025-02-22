@@ -1,5 +1,5 @@
 [project]
-name = "eqcommand_lexer"
+name = "eq_lexers"
 description = "Pygments lexer for EverQuest command syntax highlighting"
 readme = "README.md"
 license = "GPL-3.0-or-later"
