@@ -1,3 +1,3 @@
 # EverQuest Command Lexer
 
-A custom Pygments lexer for highlighting EverQuest command syntax. 
+A Pygments lexer for highlighting EverQuest command syntax. 

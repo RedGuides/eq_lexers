@@ -23,9 +23,9 @@ dependencies = [
 eqcommand = "eq_lexers.eqcommand_lexer:EQCommandLexer"
 
 [project.urls]
-Repository = "https://github.com/yourusername/eqcommand-lexer.git"
-Issues = "https://github.com/yourusername/eqcommand-lexer/issues"
-Documentation = "https://github.com/yourusername/eqcommand-lexer#readme"
+Repository = "https://github.com/RedGuides/eq_lexers.git"
+Issues = "https://github.com/RedGuides/eq_lexers/issues"
+Documentation = "https://github.com/RedGuides/eq_lexers#readme"
 
 [tool.hatch.version]
 source = "vcs"
